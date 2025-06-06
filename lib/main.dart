@@ -13,6 +13,7 @@ class Ejercicio04App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Cuerpo(),
      
     );
@@ -36,7 +37,7 @@ class _CuerpoState extends State<Cuerpo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Boton TAB"),
+        title: Text("EJERCICIOS"),
         actions:[IconButton(onPressed: ()=>mensajesCreditos(context), icon: Icon(Icons.text_snippet))]
          ),
        
@@ -55,9 +56,9 @@ class _CuerpoState extends State<Cuerpo> {
         
         
         items: [
-        BottomNavigationBarItem(icon:   Icon(Icons.filter_1),label: "pantalla 1"),
-        BottomNavigationBarItem(icon:   Icon(Icons.filter_2),label: "pantalla 2"),
-        BottomNavigationBarItem(icon:   Icon(Icons.filter_3),label: "pantalla 3"),
+        BottomNavigationBarItem(icon:   Icon(Icons.filter_1),label: "Ejercicio 1"),
+        BottomNavigationBarItem(icon:   Icon(Icons.filter_2),label: "Ejercicio 2"),
+        BottomNavigationBarItem(icon:   Icon(Icons.filter_3),label: "Ejercicio 3"),
       ],
       
       ),

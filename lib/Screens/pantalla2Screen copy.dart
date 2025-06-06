@@ -42,7 +42,7 @@ class _pantalla2State extends State<pantalla2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("PANTALLA2")),
+      appBar: AppBar(title: Text("Presión arterial PAM")),
       body: Padding(
         padding: EdgeInsets.all(16),
         child: Column(

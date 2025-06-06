@@ -36,7 +36,7 @@ class _pantalla1State extends State<pantalla1> {
     int edad = int.tryParse(edadController.text) ?? 0;
 
     if (genero != 'hombre' && genero != 'mujer') {
-      mostrarAlerta("⚠️ Género inválido. Escriba 'hombre' o 'mujer'.");
+      mostrarAlerta("Género inválido. Escriba 'hombre' o 'mujer'.");
       return;
     }
 
@@ -50,7 +50,7 @@ class _pantalla1State extends State<pantalla1> {
 
     if (!factores.containsKey(actividad)) {
       mostrarAlerta(
-          "⚠️ Actividad inválida. Escriba: sedentario, ligero, moderado, activo o muy activo.");
+          "Actividad inválida. Escriba: sedentario, ligero, moderado, activo o muy activo.");
       return;
     }
 
@@ -61,13 +61,13 @@ class _pantalla1State extends State<pantalla1> {
     double calorias = bmr * factores[actividad]!;
 
     mostrarAlerta(
-        "✅ Calorías diarias recomendadas: ${calorias.toStringAsFixed(2)} kcal");
+        "Calorías diarias recomendadas: ${calorias.toStringAsFixed(2)} kcal");
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("PANTALLA1")),
+      appBar: AppBar(title: Text("Calorias diarias recomendadas")),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: Column(
