@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:prueba_1/Screens/pantalla1Screen%20copy%202.dart';
-import 'package:prueba_1/Screens/pantalla2Screen%20copy.dart';
+import 'package:prueba_1/Screens/pantalla1Screen.dart';
+import 'package:prueba_1/Screens/pantalla2Screen.dart';
 import 'package:prueba_1/Screens/pantalla3Screen.dart';
 
 void main (){
